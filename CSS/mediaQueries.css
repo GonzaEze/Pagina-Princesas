@@ -1,3 +1,54 @@
+@media screen and (min-width:350px) and (max-width:575px) {
+    .navbar {
+        height: 65px;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/imagenes/logo-nav.jpg);
+        background-position: center;
+        background-repeat:no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    .navbar .logo:hover {
+        display: none;
+    } 
+    .navbar .navbar__menu {
+        display: none;
+    }
+    .navbar .menu-bar {
+        display: inline;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding-right: 30px;
+        color: pink;
+        font-size: 30px;
+    }
+    
+    .navbar .navbar__menu a:hover {
+        display: none;
+    }
+
+    .princesa {
+        height: auto;
+        background-color: black;
+    }
+
+    .princesa .princesa__parrafo--h2 {
+        padding-top: 150px ;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+    } 
+
+    .princesa__imagenes {
+        display: none;
+    }
+
+}
+
 @media screen and (min-width:576px) and (max-width:767px) {
     .navbar {
         height: 65px;
@@ -92,5 +143,30 @@
 
 }
 
+
+@media screen and (min-width:992px) {
+    .navbar {
+        height: 65px;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/imagenes/logo-nav.jpg);
+        background-position: center;
+        background-repeat:no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    .princesa {
+        height: 1000px;
+        background-color: black;
+    }
+
+    .princesa__imagenes img { 
+        height: 300px;
+        width: 500px;
+    }
+
+}
 
 
